@@ -3,7 +3,7 @@ import React from 'react';
 const BusinessSummary = () => {
     return (
        <div className='grid justify-items-center'>
-           <h1 className='text-4xl font-bold mb-10'>MILLIONS BUSINESS TRUST US</h1>
+           {/* <h1 className='text-4xl font-bold mb-10'>MILLIONS BUSINESS TRUST US</h1>
            <div class="stats stats-vertical lg:stats-horizontal shadow">
   
   <div class="stat">
@@ -31,7 +31,7 @@ const BusinessSummary = () => {
     <div class="stat-desc">↘︎ 90 (14%)</div>
   </div>
   
-</div>
+</div> */}
        </div>
     );
 };
