@@ -4,7 +4,7 @@ import background from '../image/Background.jpg'
 const DefferentSection = () => {
     return (
         <div>
-            <div class="hero h-[60vh] bg-accent">
+            <div class="hero  lg:h-[60vh] bg-accent mt-16">
   <div class="hero-content flex-col lg:flex-row ">
     
     <div>
@@ -13,8 +13,8 @@ const DefferentSection = () => {
       
       
     </div>
-    <div >
-    <img src={background} class="max-w-sm rounded-lg shadow-2xl h-80 " alt='fdf' />
+    <div className='lg:h-[60vh] shrink-0' >
+    <img src={background} class="h-full " alt='fdf' />
     </div>
   </div>
 </div>

@@ -17,9 +17,9 @@ const ToolsParts = () => {
 
 
     return (
-        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-20'>
+        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:p-10'>
             {
-                services.map(service => <ToolsPartsCard
+                services.slice(0, 4).map(service => <ToolsPartsCard
                 key={service._id}
                 service={service}
                 
