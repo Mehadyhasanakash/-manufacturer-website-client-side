@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Machine01",
+        "image": "https://i.ibb.co/tcTNGkY/Background.jpg",
+        "description": "Suitable for Operation at a pressure of 1.2 Kg/Cm²/2.1 Kg./Cm² corresponding to Temperature of 121ºC/134º C.",
+        "oderquantity": "2000",
+        "availableQuantity": "5000",
+        "price": "10000"
+    },
+    {
+        "name": "Machine02",
+        "image": "https://i.ibb.co/QQ7k1N6/machin01.jpg",
+        "description": "Suitable for Operation at a pressure of 1.2 Kg/Cm²/2.1 Kg./Cm² corresponding to Temperature of 121ºC/134º C.",
+        "oderquantity": "1000",
+        "availableQuantity": "7000",
+        "price": "20000"
+    },
+    {
+        "name": "Machine03",
+        "image": "https://i.ibb.co/6HWV9ZT/machin02.jpg",
+        "description": "Suitable for Operation at a pressure of 1.2 Kg/Cm²/2.1 Kg./Cm² corresponding to Temperature of 121ºC/134º C.",
+        "oderquantity": "500",
+        "availableQuantity": "1000",
+        "price": "30000"
+    },
+    {
+        "name": "Machine04",
+        "image": "https://i.ibb.co/P5kxH7G/machin03.jpg",
+        "description": "Suitable for Operation at a pressure of 1.2 Kg/Cm²/2.1 Kg./Cm² corresponding to Temperature of 121ºC/134º C.",
+        "oderquantity": "200",
+        "availableQuantity": "500",
+        "price": "1000"
+    },
+    {
+        "name": "Machine05",
+        "image": "https://i.ibb.co/RP7MSTQ/machin05.png",
+        "description": "Suitable for Operation at a pressure of 1.2 Kg/Cm²/2.1 Kg./Cm² corresponding to Temperature of 121ºC/134º C.",
+        "oderquantity": "300",
+        "availableQuantity": "600",
+        "price": "2000"
+    },
+    {
+        "name": "Machine06",
+        "image": "https://i.ibb.co/Hn7GBcK/machin06.png",
+        "description": "Suitable for Operation at a pressure of 1.2 Kg/Cm²/2.1 Kg./Cm² corresponding to Temperature of 121ºC/134º C.",
+        "oderquantity": "400",
+        "availableQuantity": "700",
+        "price": "3000"
+    },
+    {
+        "name": "Machine07",
+        "image": "https://i.ibb.co/TK0Lh80/machin07.jpg",
+        "description": "Suitable for Operation at a pressure of 1.2 Kg/Cm²/2.1 Kg./Cm² corresponding to Temperature of 121ºC/134º C.",
+        "oderquantity": "500",
+        "availableQuantity": "800",
+        "price": "4000"
+    },
+    {
+        "name": "Machine08",
+        "image": "https://i.ibb.co/GknGV9f/machin08.jpg",
+        "description": "Suitable for Operation at a pressure of 1.2 Kg/Cm²/2.1 Kg./Cm² corresponding to Temperature of 121ºC/134º C.",
+        "oderquantity": "500",
+        "availableQuantity": "800",
+        "price": "4000"
+    }
+]
