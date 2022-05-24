@@ -15,16 +15,26 @@ const Navber = () => {
     const myItem =
         <>
             <li> <Link to="/home"> Home </Link>  </li>
-            <li> <Link to="/blogs"> BLogs </Link>  </li>
+            <li> <Link to="/purchase"> Purchase </Link>  </li>
+            
+            <li> {
+                    
+                    user && <Link to='/dashboard'>Dashboard </Link>
+                    
+                    }     </li>
+
             <li> <Link to="/blogs"> MyPortfolio </Link>  </li>
 
-            <li> <Link to="/purchase"> Purchase </Link>  </li>
+            
+            <li> <Link to="/blogs"> BLogs </Link>  </li>
+
             <li>{
                 user ? <button class="btn btn-ghost" onClick={logout}>Sign out</button>
                 : <Link to="/login"> Login</Link>
                 
                 }</li>
 
+                
         </>
     return (
         <div className="navbar fixed top-0 z-50 px-10  bg-base-100 ">

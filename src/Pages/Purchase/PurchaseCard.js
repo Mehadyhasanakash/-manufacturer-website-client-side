@@ -1,15 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
-const ToolsPartsCard = ({service}) => {
-
-const navigate = useNavigate()
-
-
-const purchaseHandeal = () =>{
-  navigate('/purchase')
-}
-
+const PurchaseCard = ({service, setOders}) => {
     return (
         <div class="card w-96 bg-base-100 shadow-xl ">
   <figure><img src={service.image} alt="Shoes" /></figure>
@@ -25,11 +16,13 @@ const purchaseHandeal = () =>{
       <h2 className='text-xl font-bold'> Price: {service.price}</h2> 
     <div class="card-actions justify-end">
       
-    <button onClick={purchaseHandeal} class="btn btn-primary">Order</button>
+
+    <label onClick={()=> setOders(service)} for="my-oder-modal" class="btn btn-primary">Order</label>
+
     </div>
   </div>
 </div>
     );
 };
 
-export default ToolsPartsCard;
+export default PurchaseCard;
