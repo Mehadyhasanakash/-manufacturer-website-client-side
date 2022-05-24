@@ -2,6 +2,15 @@ import React from 'react';
 import background from '../image/Background.jpg'
 
 const DefferentSection = () => {
+
+
+
+
+
+
+
+
+  
     return (
         <div>
             <div class="hero  lg:h-[60vh] bg-accent mt-16">

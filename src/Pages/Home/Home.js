@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../../Components/Banner';
 import BusinessSummary from '../../Components/BusinessSummary';
 import DefferentSection from '../../Components/DefferentSection';
+import Footer from '../../Components/Footer';
 import ToolsParts from '../../Components/ToolsParts';
 
 
@@ -12,6 +13,7 @@ const Home = () => {
            <BusinessSummary/>
            <DefferentSection/>
            <ToolsParts/>
+           <Footer/>
            
         </div>
     );
