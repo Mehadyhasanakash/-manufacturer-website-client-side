@@ -13,7 +13,7 @@ const OderModal = ({orders, setOders}) => {
 
     const heandalSubmit = event =>{
         event.preventDefault()
-        const orders = {
+        const orders = { 
 
             orderId: _id,
              oder : name,
