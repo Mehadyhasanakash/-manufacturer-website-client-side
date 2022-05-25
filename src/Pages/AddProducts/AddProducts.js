@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 
 const AddProducts = () => {
-    const { register, formState: { errors }, handleSubmit } = useForm();
+    const { register, formState: { errors, reset}, handleSubmit } = useForm();
 
     // image hosting 
     const imageStoreKey= '42cf770d9b1bfb17d55726fdd1a62aa9';
@@ -31,8 +31,8 @@ const AddProducts = () => {
                     name: data.name,
                     email: data.email,
                     price:data.price,
-                    Minimumquantity:data.Minimumquantity,
-                    orderquantity:data.orderquantity,
+                    availableQuantity:data.availableQuantity,
+                    orderquantity:data.oderquantity,
                     image:img
 
                 }
@@ -47,6 +47,8 @@ const AddProducts = () => {
                 .then(res => res.json())
                 .then(inserted => {
                     console.log('addProduct',inserted)
+                    toast.success('success fully add')
+                    reset()
 
                 })
             }
@@ -123,12 +125,12 @@ const AddProducts = () => {
                             </label>
 
                             <label class="label mt-10">
-                                <span class="label-text"> Minimum order quantity</span>
+                                <span class="label-text"> availableQuantity</span>
                             </label>
-                            <input name='Minimumquantity'  {...register("Minimumquantity", {
+                            <input name='availableQuantity'  {...register("availableQuantity", {
                                 required: {
                                     value: true,
-                                    message: 'Minimum quantity is required'
+                                    message: 'availableQuantity is required'
                                 },
                                
                             })}
@@ -136,18 +138,18 @@ const AddProducts = () => {
                                 class="input input-bordered w-full max-w-xs" />
 
                             <label>
-                                {errors.Minimumquantity?.type === 'required' && <span className=' text-red-700'>{errors.Minimumquantity.message}</span>}
+                                {errors.availableQuantity?.type === 'required' && <span className=' text-red-700'>{errors.availableQuantity.message}</span>}
                             </label>
 
 
                             <label>
-                                {errors.Minimumquantity?.type === 'required' && <span className=' text-red-700'>{errors.Minimumquantity.message}</span>}
+                                {errors.availableQuantity?.type === 'required' && <span className=' text-red-700'>{errors.availableQuantity.message}</span>}
                             </label>
 
                             <label class="label mt-10">
-                                <span class="label-text">  order quantity</span>
+                                <span class="label-text">  oderquantity</span>
                             </label>
-                            <input name='orderquantity'  {...register("orderquantity", {
+                            <input name='oderquantity'  {...register("oderquantity", {
                                 required: {
                                     value: true,
                                     message: 'order quantity is required'
@@ -158,7 +160,7 @@ const AddProducts = () => {
                                 class="input input-bordered w-full max-w-xs" />
 
                             <label>
-                                {errors.orderquantity?.type === 'required' && <span className=' text-red-700'>{errors.orderquantity.message}</span>}
+                                {errors.oderquantity?.type === 'required' && <span className=' text-red-700'>{errors.oderquantity.message}</span>}
                             </label>
 
 

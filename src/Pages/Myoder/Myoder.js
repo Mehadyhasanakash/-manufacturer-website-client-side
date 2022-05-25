@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import auth from '../../Components/useFirebaseHook/useFirebaseHook';
 
 const Myoder = () => {
@@ -44,7 +45,12 @@ const Myoder = () => {
             <td>{oder.oder}</td>
             <td>{oder.oderquantity}</td>
             <td>{oder.availableQuantity}</td>
-            <td>{oder.price}</td>
+            <td>
+              {(oder.price && !oder.paid) && <Link to={`/dashboard/payment/${oder._id}`}> <button className='btn btn-primary btn-xs'> pay </button> </Link>}
+              {(oder.price && oder.paid) &&  <span className=' text-warning '> pad </span>}
+            
+            
+            </td>
           </tr> )
       }
       

@@ -14,6 +14,7 @@ import Myoder from "./Pages/Myoder/Myoder";
 import Review from "./Pages/Review/Review";
 import Alluser from "./Pages/Alluser/Alluser";
 import AddProducts from "./Pages/AddProducts/AddProducts";
+import Payment from "./Pages/Payment/Payment";
 
 
 
@@ -53,6 +54,7 @@ function App() {
           <Route path="review" element={<Review></Review>}></Route>
           <Route path="users" element={<Alluser/>}></Route>
           <Route path="addproduct" element={<AddProducts/>}></Route>
+          <Route path="payment/:id" element={<Payment/>}></Route>
 
 
         </Route>
