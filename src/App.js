@@ -15,6 +15,9 @@ import Review from "./Pages/Review/Review";
 import Alluser from "./Pages/Alluser/Alluser";
 import AddProducts from "./Pages/AddProducts/AddProducts";
 import Payment from "./Pages/Payment/Payment";
+import NotFoundPage from "./Components/NotFoundPage";
+import MyPortfolio from "./Pages/MyPortfolio/MyPortfolio";
+import MyProfile from "./Pages/MyPortfolio/MyProfile";
 
 
 
@@ -28,6 +31,9 @@ function App() {
         <Route path='/blogs' element={<Blog />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signin' element={<SignIn />} />
+        <Route path='*' element={<NotFoundPage />} />
+        <Route path='/MyPortfolio' element={<MyPortfolio />} />
+        <Route path='/myprofile' element={<MyProfile />} />
 
         <Route path='/purchase' element={
 

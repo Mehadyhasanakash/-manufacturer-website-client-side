@@ -23,7 +23,8 @@ const Navber = () => {
                     
                     }     </li>
 
-            <li> <Link to="/blogs"> MyPortfolio </Link>  </li>
+            <li> <Link to="/MyPortfolio"> MyPortfolio </Link>  </li>
+            <li> <Link to="/myprofile"> MyProfile </Link>  </li>
 
             
             <li> <Link to="/blogs"> BLogs </Link>  </li>
