@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import auth from '../../Components/useFirebaseHook/useFirebaseHook';
 
 const Myoder = () => {
+
     const [oders, setOders] = useState([]);
     const [user] = useAuthState(auth)
+    
     useEffect(()=>{
        if(user){
         fetch(`http://localhost:5000/order?user=${user.email}`,{
@@ -18,6 +20,7 @@ const Myoder = () => {
         .then(data => setOders(data))
        }
     } ,[user])
+
     return (
         <div>
             <h1>My oder:{oders.length}</h1>
